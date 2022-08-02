@@ -22622,7 +22622,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="C8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="10n"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="C9" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-EU" device="025-024X044" package3d_urn="urn:adsk.eagle:package:23630/1" value="100n"/>
-<part name="J6" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-PTH-VERT" package3d_urn="urn:adsk.eagle:package:38080/1" value="LED"/>
 <part name="SV3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2" value="Testport II"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
@@ -22804,10 +22803,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <attribute name="NAME" x="289.56" y="213.36" size="1.778" layer="95" align="bottom-center"/>
 <attribute name="VALUE" x="289.56" y="208.28" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J6" gate="J$1" x="66.04" y="20.32" smashed="yes">
-<attribute name="VALUE" x="63.5" y="12.954" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="63.5" y="25.908" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="SV3" gate="A" x="327.66" y="195.58" smashed="yes">
 <attribute name="NAME" x="321.31" y="206.375" size="1.778" layer="95"/>
 <attribute name="VALUE" x="321.31" y="182.88" size="1.778" layer="96"/>
@@ -22906,13 +22901,8 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 </segment>
 <segment>
 <label x="101.6" y="35.56" size="0.8128" layer="95" xref="yes"/>
-<wire x1="66.04" y1="35.56" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="A" pin="2"/>
-<pinref part="J6" gate="J$1" pin="2"/>
-<wire x1="78.74" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="20.32" x2="78.74" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="20.32" x2="78.74" y2="35.56" width="0.1524" layer="91"/>
-<junction x="78.74" y="35.56"/>
+<wire x1="66.04" y1="35.56" x2="101.6" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="OK1" gate="B" pin="C2"/>
@@ -23410,15 +23400,10 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 </net>
 <net name="LED1A" class="0">
 <segment>
-<wire x1="88.9" y1="38.1" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
 <label x="81.28" y="38.1" size="1.778" layer="95"/>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="JP6" gate="A" pin="1"/>
-<pinref part="J6" gate="J$1" pin="1"/>
-<wire x1="76.2" y1="38.1" x2="66.04" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="17.78" x2="76.2" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="17.78" x2="76.2" y2="38.1" width="0.1524" layer="91"/>
-<junction x="76.2" y="38.1"/>
 </segment>
 </net>
 <net name="MISND" class="0">
@@ -23465,15 +23450,10 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 </net>
 <net name="LED0A" class="0">
 <segment>
-<wire x1="88.9" y1="33.02" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
 <label x="81.28" y="33.02" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="JP6" gate="A" pin="3"/>
-<pinref part="J6" gate="J$1" pin="3"/>
-<wire x1="81.28" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="22.86" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="22.86" x2="81.28" y2="33.02" width="0.1524" layer="91"/>
-<junction x="81.28" y="33.02"/>
+<wire x1="88.9" y1="33.02" x2="66.04" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">

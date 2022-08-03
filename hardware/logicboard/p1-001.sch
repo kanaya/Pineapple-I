@@ -17778,7 +17778,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="OK1" library="optocoupler" library_urn="urn:adsk.eagle:library:320" deviceset="HCPL2630" device="" package3d_urn="urn:adsk.eagle:package:21941/1"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="J7" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="DIN5" device="" package3d_urn="urn:adsk.eagle:package:38294/1"/>
-<part name="J0" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="JACK-PLUG" device="0" package3d_urn="urn:adsk.eagle:package:7492/1"/>
+<part name="J0" library="con-jack" library_urn="urn:adsk.eagle:library:154" deviceset="JACK-PLUG" device="0" package3d_urn="urn:adsk.eagle:package:7492/1" value="DC9V"/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1k"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1k"/>
 <part name="JP6" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2" value="LED"/>
@@ -17791,7 +17791,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="SV3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X7" device="" package3d_urn="urn:adsk.eagle:package:22478/2" value="Testport II"/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="J4A" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-PTH" package3d_urn="urn:adsk.eagle:package:38069/1"/>
+<part name="J4A" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-PTH" package3d_urn="urn:adsk.eagle:package:38069/1" value="RLYOUT-A"/>
 <part name="R1" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="220"/>
 <part name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="4.7k"/>
 <part name="K1B" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="G5V1" device="" package3d_urn="urn:adsk.eagle:package:24341/1"/>
@@ -17808,8 +17808,8 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <part name="R2C" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-EU_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="47k"/>
 <part name="SUPPLY14" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
-<part name="J4B" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-PTH" package3d_urn="urn:adsk.eagle:package:38069/1"/>
-<part name="J4C" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-PTH" package3d_urn="urn:adsk.eagle:package:38069/1"/>
+<part name="J4B" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-PTH" package3d_urn="urn:adsk.eagle:package:38069/1" value="RLYOUT-B"/>
+<part name="J4C" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_03" device="JST-PTH" package3d_urn="urn:adsk.eagle:package:38069/1" value="RLYOUT-C"/>
 </parts>
 <sheets>
 <sheet>
@@ -18653,13 +18653,6 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <junction x="144.78" y="185.42"/>
 </segment>
 </net>
-<net name="RLYOUT3A" class="0">
-<segment>
-<pinref part="J4B" gate="J$1" pin="3"/>
-<wire x1="144.78" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
-<label x="147.32" y="53.34" size="0.8128" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="RLYOUT1B" class="0">
 <segment>
 <pinref part="K1B" gate="2" pin="S"/>
@@ -18764,6 +18757,11 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 <wire x1="106.68" y1="203.2" x2="104.14" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="203.2" x2="104.14" y2="213.36" width="0.1524" layer="91"/>
 <label x="104.14" y="213.36" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J4B" gate="J$1" pin="3"/>
+<wire x1="144.78" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
+<label x="147.32" y="53.34" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

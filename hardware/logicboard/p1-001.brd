@@ -8,14 +8,14 @@
 </settings>
 <grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="2" display="yes" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -32,11 +32,11 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -177,7 +177,7 @@
 <circle x="14.5" y="14" radius="2.6" width="0.2" layer="41"/>
 <circle x="76.5" y="14" radius="2.6" width="0.2" layer="41"/>
 <text x="45.5" y="3" size="1.27" layer="25" align="center">Pineapple I</text>
-<text x="45.5" y="1" size="1" layer="25" align="center">1.0.0-X</text>
+<text x="45.5" y="1" size="1" layer="25" align="center">1.0.1-X</text>
 <text x="15" y="3" size="1" layer="25" align="center">IN</text>
 <wire x1="79" y1="47" x2="80.5" y2="45.5" width="0" layer="20" curve="90"/>
 <wire x1="12" y1="47" x2="10.5" y2="45.5" width="0" layer="20" curve="-90"/>
@@ -289,6 +289,29 @@ PF10-4-7</text>
 <text x="68" y="47" size="1" layer="25" align="center">102</text>
 <rectangle x1="78" y1="51" x2="78.5" y2="53" layer="21"/>
 <text x="26" y="22" size="1" layer="25" align="center">TLP2630</text>
+<text x="32" y="56.5" size="1" layer="26" rot="MR90" align="center-right">Com.</text>
+<text x="34" y="56.5" size="1" layer="26" rot="MR90" align="center-right">N.C.</text>
+<text x="30" y="56.5" size="1" layer="26" rot="MR90" align="center-right">N.O.</text>
+<text x="57" y="56.5" size="1" layer="26" rot="MR90" align="center-right">N.O.</text>
+<text x="66" y="56.5" size="1" layer="26" rot="MR90" align="center-right">N.O.</text>
+<text x="59" y="56.5" size="1" layer="26" rot="MR90" align="center-right">Com.</text>
+<text x="68" y="56.5" size="1" layer="26" rot="MR90" align="center-right">Com.</text>
+<text x="61" y="56.5" size="1" layer="26" rot="MR90" align="center-right">N.C.</text>
+<text x="70" y="56.5" size="1" layer="26" rot="MR90" align="center-right">N.C.</text>
+<text x="87.5" y="28.5" size="1" layer="25" rot="R90" align="center">SD</text>
+<text x="80.5" y="28.5" size="1" layer="25" rot="R90" align="center">00</text>
+<text x="87.5" y="25.96" size="1" layer="25" rot="R90" align="center">G</text>
+<text x="87.5" y="23.42" size="1" layer="25" rot="R90" align="center">RX</text>
+<text x="87.5" y="20.88" size="1" layer="25" rot="R90" align="center">TX</text>
+<text x="80.5" y="25.96" size="1" layer="25" rot="R90" align="center">TH</text>
+<text x="80.5" y="23.42" size="1" layer="25" rot="R90" align="center">G1</text>
+<text x="80.5" y="20.88" size="1" layer="25" rot="R90" align="center">G0</text>
+<text x="80.5" y="31.04" size="1" layer="25" rot="R90" align="center">01</text>
+<text x="80.5" y="33.58" size="1" layer="25" rot="R90" align="center">02</text>
+<text x="80.5" y="36.12" size="1" layer="25" rot="R90" align="center">03</text>
+<text x="87.5" y="31.04" size="1" layer="25" rot="R90" align="center">SC</text>
+<text x="87.5" y="33.58" size="1" layer="25" rot="R90" align="center">D7</text>
+<text x="87.5" y="36.12" size="1" layer="25" rot="R90" align="center">V</text>
 </plain>
 <libraries>
 <library name="SparkFun-DiscreteSemi" urn="urn:adsk.eagle:library:514">

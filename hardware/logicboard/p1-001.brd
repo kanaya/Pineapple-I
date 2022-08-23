@@ -234,7 +234,7 @@ PF10-4-7</text>
 <vertex x="78" y="11.5"/>
 <vertex x="79" y="11.5"/>
 </polygon>
-<text x="15" y="52" size="2" layer="25" rot="R90" align="center">DC9V</text>
+<text x="15" y="56.5" size="2" layer="25" rot="R90" align="center-right">DC12V</text>
 <polygon width="0.1" layer="42">
 <vertex x="13" y="45.5"/>
 <vertex x="12" y="44.5"/>
